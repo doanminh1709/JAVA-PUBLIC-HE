@@ -1,18 +1,19 @@
-package KeThua;
+//VD : DON KE THUA
+package KeThua.KeThuaDon;
 
-public class Student {
+public class SinhVien extends Lop {
     private String ten;
     private int tuoi;
     private String diachi;
 
-    public Student(String ten, int tuoi, String diachi) {
+    public SinhVien(String ten, int tuoi, String diachi) {
         super();
         this.ten = ten;
         this.tuoi = tuoi;
         this.diachi = diachi;
     }
 
-    public Student() {
+    public SinhVien() {
 
     }
 
@@ -42,10 +43,11 @@ public class Student {
 
     @Override
     public void hienThiLop(){
-//        System.out.println(" Day la lop CNTT2");
-        System.out.println(" Day la lop CNTT3");
+        super.hienThiLop();//Kế thừa lại phương thức của Lớp bằng từ khóa supper
+        System.out.println(" Day la lop CNTT3");//Định nghĩa lại phuơng thức được kế thừa
     }
 
+    //Phương thức này sẽ chyển đổi một Object thành một String (chuỗi) rồi trả vè nó
     @Override
     public String toString() {
         return "KeThua.Student{" +
@@ -56,7 +58,7 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        Student student = new Student();
+        SinhVien student = new SinhVien();
         student.hienThiLop();
     }
 }
