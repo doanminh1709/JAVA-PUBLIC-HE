@@ -31,7 +31,6 @@ public class RunMain {
             switch (choose) {
 
                 case 1: {
-                    //Chi nhap duy nhat 1 lan
                     input(students);
                     break;
                 }
@@ -146,8 +145,8 @@ public class RunMain {
         for (int i = 0; i < n; i++) {
             if (id == students[i].getId()) {
                 flag = true;
-                for (int j = i + 1; j < n; j++) {
-                    students[i] = students[i + 1];
+                for (int j = i ; j < n-1; j++) {
+                    students[j] = students[j + 1];
                 }
                 i--;
                 n--;
