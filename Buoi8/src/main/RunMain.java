@@ -8,8 +8,6 @@ import java.util.Scanner;
 
 public class RunMain {
     public static void main(String[] args) {
-
-
         /* mình sử dụng kiểu dữ liệu của thằng cha
           trỏ đến đối tượng của thằng con
         nó luôn gọi đến cái phương thức sau từ khóa
