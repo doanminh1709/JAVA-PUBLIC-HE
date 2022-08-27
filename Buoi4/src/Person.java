@@ -27,7 +27,6 @@ public class Person {
         this.age = age;
         this.name = name;
     }
-
     //Phướng thức static
     //Khi không muốn khai báo những đối tượng ở hà nôij nữn mà chuyển về đối tượng ở thanh hóa
     //mình sẽ sử dụng phương thức static
