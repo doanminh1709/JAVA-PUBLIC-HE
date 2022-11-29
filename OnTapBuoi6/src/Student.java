@@ -30,7 +30,7 @@ public class Student {
     System.out.printf("%-10s %-10s %-10d %-10s\n",
         getMaSv(), getHoTen(), getTuoi(), getGioiTinh());
   }
-
+  
   public Student(){}
   public Student(String maSv, String hoTen, int tuoi, String gioiTinh) {
     this.maSv = maSv;
